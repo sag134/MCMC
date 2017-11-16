@@ -33,7 +33,7 @@ int main()
 		NR[i] = distribution(generator);
 	}
 	//Create uniform random number stream. One for each MCMC step.
-	int U_seed = 2;
+	int U_seed = 1;
     std::mt19937 gen(U_seed); //Standard mersenne_twister_engine seeded with rd()
     std::uniform_real_distribution<> dis(0.0, 1.0);
 	double* UR;
